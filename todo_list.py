@@ -3,7 +3,7 @@ tasks = [] #initialize empty list to store a Task
 
 #function to display the menu
 def show_menu():  
-    print("\n---Todo List Meuu---") 
+    print("\n---Todo List Menu---") 
     print("1. View Tasks")
     print("2. Add a Task")
     print("3. Mark a Task as completed")
@@ -32,7 +32,7 @@ def mark_completed():
     try:
         task_number = int(input("Enter the task number to mark as completed:"))
         if 1 <= task_number <= len(tasks):
-            tasks[task_number - 1]["comple1ted"] = True
+            tasks[task_number - 1]["completed"] = True
             print(f"Task '{tasks[task_number - 1]['name']}' mark as completed!")
         else:
             print("Invalid Task number!")
