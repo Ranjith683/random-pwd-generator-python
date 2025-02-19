@@ -44,7 +44,7 @@ def delete_tasks():
     view_tasks()
     try:
         task_number = int(input("Enter the task number to delete: "))
-        if 1 <= task_number <=len(tasks):
+        if 1 <= task_number <= len(tasks):
             deleted_task = tasks.pop(task_number - 1)
             print(f"Task '{deleted_task['name']}' deleted successfully!")
         else:
